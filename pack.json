@@ -1,0 +1,33 @@
+{
+  "name": "Vonit Launch",
+  "id": "vonit-launch",
+  "version": "0.1.0",
+  "description": "Launch a product you built: understand it, position it, pick channels, make the assets, reach people personally, run launch day, and keep going after.",
+  "license": "MIT",
+  "kind": "playbook",
+  "entry_skill": "launch-plan",
+  "stages": [
+    {"id": "understand", "skill": "understand-product", "produces": "product brief and product type",
+     "needs": {"tools": ["browser"], "reads": ["the product's site, repository or store page"]}},
+    {"id": "ready", "skill": "launch-plan", "produces": "go, or the one thing to fix first"},
+    {"id": "position", "skill": "positioning", "produces": "one-liner, tagline, proof points, foil",
+     "needs": {"person": ["confirm who it is for and the alternative"]}},
+    {"id": "channels", "skill": "launch-channels", "produces": "channels and a dated timeline",
+     "needs": {"person": ["existing audience: list size, followers, communities"]}},
+    {"id": "assets", "skill": "launch-assets", "produces": "landing page fixes, screenshots, images, demo video, copy per channel, press kit",
+     "needs": {"tools": ["browser", "image", "video"], "approval": "every asset"}},
+    {"id": "outreach", "skill": "outreach", "produces": "a personal list and individual messages",
+     "needs": {"connections": ["email"], "approval": "every message", "caps": {"new_people_per_day": 20, "follow_ups": 1}}},
+    {"id": "launch-day", "skill": "launch-day", "produces": "run sheet, posts out, every comment answered",
+     "needs": {"connections": ["x", "linkedin", "producthunt", "email"], "approval": "every post and message"}},
+    {"id": "after", "skill": "after-launch", "produces": "follow-ups, results, next launch moment",
+     "needs": {"connections": ["email", "analytics"], "approval": "every message"}}
+  ],
+  "never": [
+    "send or post anything without the person's approval of the exact text and destination",
+    "ask for upvotes, use other accounts, or join vote rings",
+    "use bought, scraped or guessed contact lists",
+    "invent users, numbers, quotes, logos, press or reviews"
+  ],
+  "credits": "See NOTICE.md"
+}
