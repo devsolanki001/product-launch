@@ -1,4 +1,4 @@
-# Vonit Launch
+# Product Launch by Vonit-Lab
 
 Skills that help an AI agent launch a product someone built - software, an app,
 an AI tool, an open-source project or a digital product. From "it works" to "the
@@ -27,7 +27,7 @@ founder's name without their approval, no spam, no invented facts.
 `skills/` folders into the agent's skills folder - for Claude Code,
 `~/.claude/skills/` - and ask it to plan your launch.
 
-**In Vonit**: say "add github.com/<this repository>". Vonit keeps every skill,
+**In Vonit**: say "add github.com/devsolanki001/product-launch". Vonit keeps every skill,
 gives your agents their names, and opens the one a job needs. With
 `pack.json`, Vonit also plans a launch in stages, hands images and video to
 agents with the tools, offers to connect X, LinkedIn or email when a stage needs
